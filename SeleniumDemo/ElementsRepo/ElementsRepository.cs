@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using OpenQA.Selenium;
+using SeleniumDemo.ElementsRepo;
 using By = OpenQA.Selenium.Extensions.By;
 
 namespace SeleniumDemo
@@ -19,6 +20,8 @@ namespace SeleniumDemo
         public IWebElement Xpath => Driver.FindElement(By.XPath("//a[contains(@href,\"AddBulletTracker')]"));
 
         public IWebElement jquery => Driver.FindElement(By.JQuerySelector("#id.chapter"));
+
+        public ExamplePage Example => new ExamplePage(Driver);
 
         public ElementsRepository(IWebDriver driver)
         {
