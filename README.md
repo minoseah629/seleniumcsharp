@@ -1,25 +1,22 @@
 Introduction
 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.
+This project is to assist in demonstrated how to utilize Selenium WebDriver in C# to automate a manual process that consumes time and repeatable.  I selected C# as this project's language due to my coworkers develop using C# and I feel most comfortable with it, but I could potentially see myself writing similar project in a different language in future.  
 
 Getting Started
 
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
+To get started: you will need to have Visual Studio 2015 (at least Community version), which could be downloaded here: https://www.visualstudio.com/. Then after installing Visual Studio, you can clone this project by using git:
 
-Installation process
-Software dependencies
-Latest releases
-API references
-Build and Test
+git clone https://github.com/minoseah629/seleniumcsharp.git
 
-TODO: Describe and show how to build your code and run the tests.
+Open SeleniumDemo.sln in Visual Studio
 
-Contribute
+Build Solution
 
-TODO: Explain how other users and developers can contribute to make your code better.
+During this build, Visual Studio will be downloading the dependencies from nuget.org so the solution needs to build correctly. 
 
-If you want to learn more about creating good readme files then refer the following guidelines. You can also seek inspiration from the below readme files:
+1. Selenium WebDriver version 2.53.1
+2. xUnit and underlying xUnit dependencies latest version
+3. Selenium.Support version 2.53.1
+4. Selenium.WebDriver.Extensions 2.0.0
 
-ASP.NET Core
-Visual Studio Code
-Chakra Core
+If the build succeeds, then you can start creating Selenium tests.
